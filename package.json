@@ -1,0 +1,26 @@
+{
+  "name": "Html-markup",
+  "version": "1.0.0",
+  "description": "Html markup with gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp",
+    "html",
+    "markup"
+  ],
+  "author": "Pesochenski <pesochenski.corp@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.39.2"
+  }
+}

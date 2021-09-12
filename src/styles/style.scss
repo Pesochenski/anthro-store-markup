@@ -1,0 +1,17 @@
+@import 'catalog.scss';
+@import 'blog.scss';
+@import 'contact.scss';
+
+@import '_colors.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  border-radius: 0;
+  border: none;
+  outline: none;
+
+  background: none;
+}
