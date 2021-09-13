@@ -1,4 +1,4 @@
-@import 'montserrat.css';
+@import 'fontFaces/montserrat.css';
 @import '_colors.scss';
 
 .header {
@@ -13,14 +13,42 @@
     padding: 0 20px 0 20px;
   }
 
+  @media screen and (max-width: 1000px) {
+    padding: 0 25px 0 25px;
+  }
+
+  &__burger {
+    display: none;
+    width: 25px;
+
+    &-line {
+      width: 100%;
+      height: 2.5px;
+      background-color: $main-blue;
+
+      margin-top: 4.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
   &__logo {
     letter-spacing: 0.03em;
     font: {
       family: 'Montserrat';
       size: 25px;
-      weight: 600;
+      weight: 500;
     }
     color: $white;
+
+    @media screen and (max-width: 768px) {
+      color: $main-blue;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__navbar {
@@ -41,6 +69,10 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 

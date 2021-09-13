@@ -10,7 +10,7 @@ const path = {
   },
   dev: {
     html: [sourceFolder + "/pages/*.html", "!" + sourceFolder + "/components/_*.html"],
-    css: [sourceFolder + "/styles/*.{scss,css}", "!" + sourceFolder + "/styles/_*.scss"],
+    css: [sourceFolder + "/styles/**/*.{scss,css}", "!" + sourceFolder + "/styles/_*.scss"],
     assets: sourceFolder + "/assets/**/*.{svg,png,jpg,webp,ico}",
     fonts: sourceFolder + "/fonts/**/*.{ttf,woff,eot}",
   },
