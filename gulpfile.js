@@ -49,6 +49,11 @@ function assets() {
     .pipe(dest(path.build.assets))
     .pipe(browsersync.stream())
 }
+function fonts() {
+  return src(path.dev.fonts)
+  .pipe(dest(path.build.fonts)) 
+  
+}
 
 function fileWather() {
   gulp.watch([path.watch.html], html);
@@ -59,9 +64,10 @@ function fileCleaner() {
   return del(path.clean);
 }
 
-const build = gulp.series(fileCleaner, gulp.parallel(html, css, assets));
+const build = gulp.series(fileCleaner, gulp.parallel(html, css, assets, fonts));
 const watch = gulp.parallel(build, fileWather, browserSync);
 
+exports.fonts = fonts;
 exports.assets = assets;
 exports.css = css;
 exports.html = html;

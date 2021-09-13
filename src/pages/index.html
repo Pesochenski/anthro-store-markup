@@ -1,10 +1,180 @@
+@@include('../components/_basis.html')
+
 <body>
-  @@include('../components/_basis.html')
   @@include('../components/_header.html')
 
-  <section>
-    <h1>Home</h1>
+  <section class="home">
+    <section class="home__start">
+      <div class="home__content">
+        <div class="home__description">
+          <h1 class="home__title">Set the mood</h1>
+          <p class="home__text">Create a comfortable and welcoming space to relax with great company. Shop unique furniture for your well loved rooms.</p>
+
+          <button class="home__main-btn">Shop now</button>
+      </div>
+      </div>
+
+      <div class="home__home-pic"/>
+    </section>
+
+    <section class="home__gifts">
+      <h3 class="home__gifts-title">Channel your inner child with candy-colored slippers, poms that pop, and gifts that spark smiles, from ear to ear.</h3>
+      <button class="home__gifts-btn">shop gifts</button>
+
+      <section class="home__gifts-btns">
+        <div class="home__gifts-content">
+          <div class="home__gift home__gift-1">
+            <div class="home__gift-descr home__gift-descr-1">
+              <p class="home__gift-title">Gifts</p>
+              <button class="home__gift-btn">Discover</button>
+            </div>
+          </div>
+
+          <div class="home__gift home__gift-2">
+            <div class="home__gift-descr home__gift-descr-2">
+              <p class="home__gift-title">Decoration</p>
+              <button class="home__gift-btn">Discover</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__gifts-content">
+          <div class="home__gift home__gift-3">
+            <div class="home__gift-descr home__gift-descr-3">
+              <p class="home__gift-title">Lighting</p>
+              <button class="home__gift-btn">Discover</button>
+            </div>
+          </div>
+
+          <div class="home__gift home__gift-4">
+            <div class="home__gift-descr home__gift-descr-4">
+              <p class="home__gift-title">Furniture</p>
+              <button class="home__gift-btn">Discover</button>
+            </div>
+          </div>
+        </section>
+    </div>
+    </section>
+
+    <section class="home__benefits">
+      <div class="home__benefit">
+        <img src="../assets/svg/Car.svg" class="home__benefit-logo" alt="car">
+        <h4 class="home__benefit-title">Store Pickup</h4>
+        <p class="home__benefit-text">Choose from two<br/> easy-breezy options: Curbside or In-Store!</p>
+      </div>
+
+      <div class="home__benefit">
+        <img src="../assets/svg/Timer.svg" class="home__benefit-logo" alt="timer">
+        <h4 class="home__benefit-title">Anthro At Your Service</h4>
+        <p class="home__benefit-text">We’re here to help! Complimentary digital and in-person styling services are available.</p>
+      </div>
+
+      <div class="home__benefit">
+        <img src="../assets/svg/Box.svg" class="home__benefit-logo" alt="box">
+        <h4 class="home__benefit-title">Delivered to Your Door</h4>
+        <p class="home__benefit-text">We offer a number of shipping options to fit your needs.</p>
+      </div>
+    </section>
+
+    <section class="home__bestsellers">
+      <h3 class="home__bestsellers-title">Bestsellers</h3>
+
+      <section class="home__bestsellers-content">
+        <div class="home__bestseller">
+          <p class="home__bestseller-mark home__bestseller-mark-new">new</p>
+          <div class="home__bestseller-pic home__bestseller-pic-1"></div>
+          <div class="home__bestseller-content">
+            <p class="home__bestseller-name">Desi Outdoor Sconce</p>
+            <div class="home__bestseller-price-div">
+              <p class="home__bestseller-price">USD 178.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__bestseller">
+          <div class="home__bestseller-pic home__bestseller-pic-2"></div>
+          <div class="home__bestseller-content">
+            <p class="home__bestseller-name">Haverhill Chair</p>
+            <div class="home__bestseller-price-div">
+              <p class="home__bestseller-price">USD 2784.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__bestseller">
+          <p class="home__bestseller-mark home__bestseller-mark-sale">sale</p>
+          <div class="home__bestseller-pic home__bestseller-pic-3"></div>
+          <div class="home__bestseller-content">
+            <p class="home__bestseller-name">Swirled Drum Coffee Table</p>
+            <div class="home__bestseller-price-div">
+              <p class="home__bestseller-price-sale">USD 3540.00</p>
+              <p class="home__bestseller-price-sale  home__bestseller-price-through">USD 3 954.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__bestseller">
+          <div class="home__bestseller-pic home__bestseller-pic-4"></div>
+          <div class="home__bestseller-content">
+            <p class="home__bestseller-name">Oak Mikado Coffee Table</p>
+            <div class="home__bestseller-price-div">
+              <p class="home__bestseller-price">USD 1755.00</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      <button class="home__bestsellers-btn">show more</button>
+    </section>
+
+    <section class="home__quotes">
+      <img src="../assets/svg/Quote.svg" class="home__quotes-background" alt="quote"/>
+
+      <div class="home__quotes-content">
+        <img src="../assets/svg/Arrow.svg" class="home__quotes-arrow-left" alt="arrow" />
+        <p class="home__quotes-main">Antropologie’s furniture is perfect! It's prettier than the pictures and  I highly recommend it. It's the most comfortable furniture I've ever had.</p>
+        <img src="../assets/svg/Arrow.svg" class="home__quotes-arrow-right" alt="arrow" />
+      </div>
+
+      <div class="home__quotes-author">
+        <img src="../assets/img/QuoteAvatar.png" class="home__quotes-author-avatar" alt="avatar" />
+        <p class="home__quotes-author-name">Clarissa Heath</p>
+      </div>
+
+    </section>
+
+    <section class="home__blog">
+      <div class="home__blog-background"></div>
+
+      <h3 class="home__blog-title">Blog</h3>
+
+      <section class="home__blogs">
+        <a class="home__blog-item" href="#">
+          <div class="home__blog-img home__blog-img-1"></div>
+          <h4 class="home__blog-item-title">Which Sofa Style is Best for You?</h4>
+          <p class="home__blog-item-date">August 21, 2020</p>
+          <p class="home__blog-item-text">For those of us who follow home decor trends, it sometimes seems that fashionable colors swing from beige to grays and then back again...</p>
+        </a>
+        <a class="home__blog-item" href="#">
+          <div class="home__blog-img home__blog-img-2"></div>
+          <h4 class="home__blog-item-title">2021 Home Furniture Trends</h4>
+          <p class="home__blog-item-date">August 11, 2020</p>
+          <p class="home__blog-item-text">We asked designers and industry veterans what they are forecasting as the top design trends moving forward into 2021.</p>
+        </a>
+        <a class="home__blog-item" href="#">
+          <div class="home__blog-img home__blog-img-3"></div>
+          <h4 class="home__blog-item-title">What's your Furniture Style?</h4>
+          <p class="home__blog-item-date">August 10, 2020</p>
+          <p class="home__blog-item-text">Narrowing in on your interior design style can keep you from spinning on decisions and ultimately investing in pieces that don’t speak to your...</p>
+        </a>
+    </section>
+
+      <button class="home__blog-btn">read blog</button>
+    </section>
   </section>
 
-@@include('../components/_footer.html')
+  @@include('../components/_mailing.html')
+  @@include('../components/_footer.html')
 </body>
+
+</html>

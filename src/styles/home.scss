@@ -1,0 +1,572 @@
+@import '_colors.scss';
+@import 'grotesk.css';
+@import 'montserrat.css';
+
+.home {
+  &__start {
+    display: flex;
+    height: 808px;
+    width: 100%;
+  }
+
+  &__content {
+    height: 100%;
+    width: 484px;
+    background: $dark-blue;
+
+    @media screen and (max-width: 1200px) {
+      width: 322px;
+    }
+  }
+  &__description {
+    margin: 456px 0 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__title {
+    letter-spacing: 0.04em;
+    color: $main-gray;
+    font: {
+      family: 'Neue Haas Grotesk Display Pro';
+      size: 40px;
+      weight: 300;
+    }
+  }
+
+  &__text {
+    margin-top: 5px;
+    width: 302px;
+    line-height: 134.9%;
+    color: $main-gray;
+    font: {
+      family: 'Montserrat';
+      weight: 400;
+      size: 15px;
+    }
+  }
+
+  &__main-btn {
+    margin-top: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $main-gray;
+    font: {
+      family: 'Montserrat';
+      size: 15px;
+      weight: 700;
+    }
+    line-height: 21px;
+    border-bottom: 2px solid $main-gray;
+  }
+
+  &__home-pic {
+    background: url('../assets/img/homePage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-grow: 1;
+  }
+
+  &__gifts {
+    height: 1158px;
+    width: 100%;
+    padding: 0 150px 0 150px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+
+    &-title {
+      width: 743px;
+      margin: 143px auto 0 auto;
+      line-height: 141.9%;
+      text-align: center;
+      color: $main-blue;
+      font: {
+        family: 'Montserrat';
+        size: 25px;
+        weight: 400;
+      }
+    }
+    &-btn {
+      margin: 20px auto 0 auto;
+      letter-spacing: 0.03em;
+      line-height: 21px;
+      color: $main-blue;
+      text-transform: uppercase;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+    }
+
+    &-content {
+      width: 100%;
+      height: 328px;
+      display: flex;
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 142px;
+        height: 251px;
+      }
+    }
+  }
+
+  &__gift {
+    margin-left: 30px;
+    display: flex;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-descr {
+      margin-top: 29px;
+      margin-left: auto;
+
+      &-1 {
+        margin-right: 34px;
+      }
+      &-2 {
+        margin-right: 26px;
+      }
+      &-3 {
+        margin-right: 57px;
+      }
+      &-4 {
+        margin-right: 48px;
+      }
+    }
+
+    &-title {
+      color: $main-blue;
+      letter-spacing: -0.01em;
+      font: {
+        family: 'Montserrat';
+        size: 25px;
+        weight: 500;
+      }
+    }
+    &-btn {
+      text-transform: uppercase;
+      color: $main-blue;
+      letter-spacing: 0.12em;
+      margin-top: 8px;
+      line-height: 15px;
+      font: {
+        family: 'Montserrat';
+        size: 10px;
+        weight: 500;
+      }
+      border-bottom: 1px solid $main-blue;
+    }
+
+    &-1 {
+      flex-grow: 3;
+      background: url('../assets/img/Gifts.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-2 {
+      flex-grow: 2;
+      background: url('../assets/img/Decoration.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-3 {
+      flex-grow: 2;
+      background: url('../assets/img/Lighting.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-4 {
+      flex-grow: 3;
+      background: url('../assets/img/Furniture.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__benefits {
+    width: 100%;
+    height: 328px;
+    background-color: $main-gray;
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__benefit {
+    display: flex;
+    flex-direction: column;
+
+    &-logo {
+      margin: 0 auto 0 auto;
+    }
+    &-title {
+      color: $main-blue;
+      margin: 16px auto 0 auto;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 23px;
+        weight: 500px;
+      }
+      letter-spacing: 0.04em;
+    }
+    &-text {
+      text-align: center;
+      width: 299px;
+      line-height: 134.9%;
+      color: $main-blue;
+      margin-top: 8px;
+      font: {
+        size: 20px;
+        family: 'Montserrat';
+        weight: 400;
+      }
+    }
+  }
+
+  &__bestsellers {
+    width: 100%;
+    height: 885px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+
+    &-title {
+      margin: 150px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.04em;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        weight: 500;
+        size: 45px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 55px;
+
+      @media screen and (max-width: 1200px) {
+        overflow-y: auto;
+      }
+    }
+
+    &-btn {
+      margin: 34px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 21px;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+    }
+  }
+
+  &__bestseller {
+    position: relative;
+    margin-left: 30px;
+    flex-grow: 0.25;
+    min-width: 263px;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 25px;
+    }
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &-mark {
+      position: absolute;
+      margin: 18px 0 0 17px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font: {
+        family: 'Montserrat';
+        size: 13px;
+        weight: 500;
+      }
+      &-new {
+        color: $main-blue;
+      }
+      &-sale {
+        color: $red;
+      }
+    }
+
+    &-pic {
+      width: 100%;
+      height: 362px;
+
+      &-1 {
+        background: url('../assets/img/1-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-2 {
+        background: url('../assets/img/2-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-3 {
+        background: url('../assets/img/3-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-4 {
+        background: url('../assets/img/4-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-content {
+      margin-top: 13px;
+    }
+    &-name {
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: $main-blue;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 15px;
+        weight: 500;
+      }
+    }
+    &-price {
+      color: $gray;
+      letter-spacing: 0.02em;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 400;
+      }
+      &-div {
+        margin-top: 3px;
+        display: flex;
+      }
+      &-sale {
+        margin-right: 16px;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 400;
+        }
+      }
+      &-through {
+        text-decoration: line-through;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &__quotes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 524px;
+
+    &-background {
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-content {
+      margin: 0 auto 0 auto;
+      display: flex;
+    }
+
+    &-main {
+      text-align: center;
+      width: 805px;
+      margin: 47px 145px 0 145px;
+      line-height: 43px;
+      color: $main-blue;
+      font: {
+        family: 'Montserrat';
+        size: 25px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 1200px) {
+        width: 691px;
+        margin: 47px 115px 0 115px;
+      }
+    }
+
+    &-arrow {
+      &-left {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-author {
+      margin: 88px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      &-avatar {
+        margin: 0 auto 0 auto;
+      }
+      &-name {
+        margin-top: 24px;
+        color: $main-blue;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 700;
+        }
+      }
+    }
+  }
+
+  &__blog {
+    min-height: 664px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-background {
+      background-color: $main-gray;
+      height: 358px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &-title {
+      margin: 40px auto 0 auto;
+      color: $main-blue;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 45px;
+        weight: 500;
+      }
+      letter-spacing: 0.04em;
+    }
+
+    &-item {
+      flex-grow: 1;
+      margin-left: 30px;
+      min-width: 263px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-left: 25px;
+      }
+
+      &-title {
+        margin-top: 20px;
+        color: $main-blue;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 700;
+        }
+      }
+
+      &-date {
+        margin-top: 5px;
+        color: $gray;
+        text-transform: uppercase;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+      }
+
+      &-text {
+        color: $main-blue;
+        line-height: 134.9%;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 263px;
+      &-1 {
+        background: url('../assets/img/1-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-2 {
+        background: url('../assets/img/2-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-3 {
+        background: url('../assets/img/3-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-btn {
+      margin: 22px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 21px;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+    }
+  }
+
+  &__blogs {
+    display: flex;
+    width: 100%;
+
+    margin-top: 55px;
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+  }
+}

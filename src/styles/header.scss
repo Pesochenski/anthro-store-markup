@@ -1,0 +1,58 @@
+@import 'montserrat.css';
+@import '_colors.scss';
+
+.header {
+  position: absolute;
+  display: flex;
+
+  width: 100%;
+  margin-top: 38px;
+  padding: 0 150px 0 150px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 20px 0 20px;
+  }
+
+  &__logo {
+    letter-spacing: 0.03em;
+    font: {
+      family: 'Montserrat';
+      size: 25px;
+      weight: 600;
+    }
+    color: $white;
+  }
+
+  &__navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-item {
+      margin: 41px 0 0 30px;
+      letter-spacing: 0.03em;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 500;
+      }
+      color: $main-blue;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__icons {
+    margin-left: auto;
+  }
+
+  &__icon {
+    margin-left: 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

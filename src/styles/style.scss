@@ -1,8 +1,18 @@
+@import 'home.scss';
 @import 'catalog.scss';
 @import 'blog.scss';
 @import 'contact.scss';
+@import 'cart.scss';
+@import 'item.scss';
+@import 'mailing.scss';
+
+@import 'header.scss';
+@import 'footer.scss';
 
 @import '_colors.scss';
+
+@import 'montserrat.css';
+@import 'grotesk.css';
 
 * {
   box-sizing: border-box;
@@ -14,4 +24,18 @@
   outline: none;
 
   background: none;
+
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: black;
+}
+
+a,
+button {
+  cursor: pointer;
 }

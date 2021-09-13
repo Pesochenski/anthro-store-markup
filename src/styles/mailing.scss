@@ -1,0 +1,62 @@
+@import '_colors.scss';
+@import 'montserrat.css';
+
+.mailing {
+  min-height: 454px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    width: 750px;
+    margin: 100px auto 0 auto;
+    color: $main-blue;
+    text-align: center;
+    line-height: 35px;
+    font: {
+      family: 'Montserrat';
+      size: 25px;
+      weight: 500;
+    }
+  }
+
+  &__form {
+    margin: 26px auto 0 auto;
+  }
+
+  &__input {
+    width: 531px;
+    height: 58px;
+    background-color: $main-gray;
+    padding-left: 22px;
+    color: $main-blue;
+    font: {
+      family: 'Montserrat';
+      weight: 500;
+      size: 16px;
+    }
+
+    &::placeholder {
+      color: $gray;
+      font: {
+        family: 'Montserrat';
+        weight: 500;
+        size: 16px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 219px;
+    height: 58px;
+    background-color: $main-blue;
+    color: $main-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font: {
+      family: 'Montserrat';
+      size: 15px;
+      weight: 500;
+    }
+  }
+}
