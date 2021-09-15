@@ -1,12 +1,103 @@
-@@include('../components/_basis.html')
+@@include('../components/basis/_basis-catalog.html')
 
 <body>
   @@include('../components/_header.html')
 
   <section class="catalog">
-    <h1>Catalog</h1>
+    <p class="catalog__bread-crumbs">Home &nbsp; / &nbsp; Catalog &nbsp; / &nbsp; Furniture &nbsp; / &nbsp; Living Room &nbsp; / &nbsp; 
+      <span class="catalog__bread-crumbs_active">Leather Seating</span>
+    </p>
+
+    <div class="catalog__content">
+      <aside class="catalog__aside">
+        <section class="catalog__aside-btns">
+          <p class="catalog__aside-btn">Seating Collections</p>
+          <p class="catalog__aside-btn">Bedroom</p>
+          <p class="catalog__aside-btn">Living room</p>
+
+          <hr class="catalog__aside-btn_active" />
+          <div class="catalog__aside-menu">
+            <p class="catalog__aside-item">Sofas</p>
+            <p class="catalog__aside-item">Sectionals</p>
+            <p class="catalog__aside-item">Modular Seating</p>
+            <p class="catalog__aside-item">Chairs</p>
+            <p class="catalog__aside-item">Leather Seating</p>
+            <hr class="catalog__aside-item_active"/>
+            <p class="catalog__aside-item">Chaise Lounges</p>
+            <p class="catalog__aside-item">Coffee Tables</p>
+            <p class="catalog__aside-item">End Tables</p>
+            <p class="catalog__aside-item">Benches & Poufs</p>
+            <p class="catalog__aside-item">Shelving Units</p>
+            <p class="catalog__aside-item">Media Storage</p>
+          </div>
+
+          <p class="catalog__aside-btn">Kitchen</p>
+          <p class="catalog__aside-btn">Small Space Furniture</p>
+          <p class="catalog__aside-btn">Bathroom Vanities</p>
+          <p class="catalog__aside-btn">Outdoor</p>
+          <p class="catalog__aside-btn">Home Office</p>
+          <p class="catalog__aside-btn">Entryway Furniture</p>
+          <p class="catalog__aside-btn">Custom Furniture</p>
+        </section>
+
+        <section class="catalog__aside-additional">
+          <div class="catalog__aside-additional-accord">
+            <div class="catalog__aside-additional-accord-header">
+              <p class="catalog__aside-additional-accord-title">color</p>
+              <button>
+                <img class="catalog__aside-additional-accord-btn" src="../assets/svg/catalog/catalogClose.svg" alt="open" />
+              </button>
+            </div>
+
+            <hr class="catalog__aside-additional-accord-line" />
+          </div>
+          <div class="catalog__aside-additional-accord">
+            <div class="catalog__aside-additional-accord-header">
+              <p class="catalog__aside-additional-accord-title">material</p>
+              <button>
+                <img class="catalog__aside-additional-accord-btn" src="../assets/svg/catalog/catalogOpen.svg" alt="open" />
+              </button>
+            </div>
+
+            <hr class="catalog__aside-additional-accord-line" />
+          </div>
+          <div class="catalog__aside-additional-accord">
+            <div class="catalog__aside-additional-accord-header">
+              <p class="catalog__aside-additional-accord-title">price</p>
+              <button>
+                <img class="catalog__aside-additional-accord-btn" src="../assets/svg/catalog/catalogClose.svg" alt="open" />
+              </button>
+            </div>
+
+            <hr class="catalog__aside-additional-accord-line" />
+          </div>
+        </section>
+
+        <button class="catalog__reset-filters-btn">Reset all filters</button>
+      </aside>
+
+      <section class="catalog__choice">
+        <div class="catalog__header">
+          <div class="catalog__header-main">
+            <p class="catalog__header-title">Leather Seating</p>
+            <p class="catalog__header-result">37 results</p>
+          </div>
+
+          <div class="catalog__header-filter">
+            <p class="catalog__header-sort">Sort:</p>
+            <p class="catalog__header-sort-item">Featured</p>
+            <img class="catalog__header-arrow" src="../assets/svg/catalog/sortArrow.svg" alt="arrow"/>
+          </div>
+        </div>
+
+        <div class="catalog__items">
+
+        </div>
+      </section>
+    </div>
   </section>
 
+  @@include('../components/_mailing.html')
   @@include('../components/_footer.html')
 </body>
 

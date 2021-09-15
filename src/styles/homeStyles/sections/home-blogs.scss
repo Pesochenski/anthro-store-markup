@@ -1,0 +1,186 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.home {
+  &__blog {
+    min-height: 664px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-background {
+      background-color: $main-gray;
+      height: 358px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+
+      @media screen and (max-width: 768px) {
+        height: 1122px;
+      }
+
+      @media screen and (max-width: 480px) {
+        height: 874px;
+      }
+    }
+
+    &-title {
+      margin: 40px auto 0 auto;
+      color: $main-blue;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 45px;
+        weight: 300;
+      }
+      letter-spacing: 0.04em;
+
+      @media screen and (max-width: 480px) {
+        margin-top: 31px;
+        font-size: 30px;
+      }
+    }
+
+    &-item {
+      flex-grow: 1;
+      margin-left: 30px;
+      min-width: 263px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-left: 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 27px 0 0 0;
+      }
+
+      &-title {
+        margin-top: 20px;
+        color: $main-blue;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 700;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-top: 26px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-top: 17px;
+        }
+      }
+
+      &-date {
+        margin-top: 5px;
+        color: $gray;
+        text-transform: uppercase;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+      }
+
+      &-text {
+        color: $main-blue;
+        line-height: 134.9%;
+        margin-top: 16px;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 15px;
+          margin-top: 13px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 263px;
+      &-1 {
+        background: url('../../../assets/img/home/1-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-2 {
+        background: url('../../../assets/img/home/2-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-3 {
+        background: url('../../../assets/img/home/3-blog.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 234px;
+      }
+
+      @media screen and (max-width: 480px) {
+        height: 153px;
+      }
+    }
+
+    &-btn {
+      margin: 22px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 21px;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 14px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__blogs {
+    display: flex;
+    width: 100%;
+
+    margin-top: 55px;
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      overflow-y: auto;
+      padding: 0 25px 0 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 0;
+      padding: 0 15px 0 15px;
+    }
+  }
+}

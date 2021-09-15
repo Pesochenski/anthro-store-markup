@@ -1,0 +1,103 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.home {
+  &__benefits {
+    width: 100%;
+    height: 328px;
+    background-color: $main-gray;
+    padding: 0 150px 0 150px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      padding: 0 25px 0 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      height: 846px;
+      flex-direction: column;
+      align-items: initial;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 700px;
+      justify-content: initial;
+    }
+  }
+  &__benefit {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 480px) {
+      margin-top: 45px;
+    }
+
+    &-logo {
+      margin: 0 auto 0 auto;
+    }
+    &-title {
+      color: $main-blue;
+      margin: 16px auto 0 auto;
+      text-align: center;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 23px;
+        weight: 500px;
+      }
+      letter-spacing: 0.04em;
+
+      @media screen and (max-width: 1000px) {
+        width: 161px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: initial;
+        font-size: 20px;
+      }
+    }
+    &-text {
+      text-align: center;
+      width: 299px;
+      line-height: 134.9%;
+      color: $main-blue;
+      margin-top: 8px;
+      font: {
+        size: 20px;
+        family: 'Montserrat';
+        weight: 400;
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 239px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 8px auto 0 auto;
+        width: 299px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 16px;
+      }
+
+      &-hidden {
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+}

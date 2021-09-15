@@ -16,7 +16,7 @@ const path = {
   },
   watch: {
     html: sourceFolder + "/**/*.html",
-    css: sourceFolder + "/styles/**/*.scss",
+    css: sourceFolder + "/styles/**/*.{scss,css}",
     assets: sourceFolder + "/assets/**/*.{svg,png,jpg,webp,ico}",
   },
   clean: "./" + projectFolder + "/",

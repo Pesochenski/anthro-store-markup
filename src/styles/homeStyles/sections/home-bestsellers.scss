@@ -1,0 +1,253 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.home {
+  &__bestsellers {
+    width: 100%;
+    min-height: 885px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+      min-height: 759px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 15px 0 15px;
+      min-height: 1056px;
+    }
+
+    @media screen and (max-width: 480px) {
+      min-height: 775px;
+    }
+
+    &-title {
+      margin: 150px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.04em;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        weight: 300;
+        size: 45px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-top: 110px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 80px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 70px;
+        font-size: 30px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 55px;
+
+      @media screen and (max-width: 1200px) {
+        overflow-y: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    &-btn {
+      margin: 34px auto 0 auto;
+      color: $main-blue;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 21px;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 83px;
+      }
+    }
+  }
+
+  &__bestseller {
+    position: relative;
+    margin-left: 30px;
+    flex-grow: 0.25;
+    min-width: 263px;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 25px;
+      min-width: 221px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 27px;
+      margin-left: 0;
+      flex-grow: initial;
+      width: calc(50% - 10px);
+      min-width: 215px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 24px;
+      min-width: 138px;
+    }
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &-mark {
+      position: absolute;
+      margin: 18px 0 0 17px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font: {
+        family: 'Montserrat';
+        size: 13px;
+        weight: 500;
+      }
+      &-new {
+        color: $main-blue;
+      }
+      &-sale {
+        color: $red;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 10px;
+      }
+    }
+
+    &-pic {
+      width: 100%;
+      height: 362px;
+
+      &-1 {
+        background: url('../../../assets/img/home/1-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-2 {
+        background: url('../../../assets/img/home/2-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-3 {
+        background: url('../../../assets/img/home/3-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &-4 {
+        background: url('../../../assets/img/home/4-bestseller.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media screen and (max-width: 1200px) {
+        height: 331px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        height: 321px;
+      }
+
+      @media screen and (max-width: 480px) {
+        height: 214px;
+      }
+    }
+
+    &-content {
+      margin-top: 13px;
+
+      @media screen and (max-width: 480px) {
+        margin-top: 7px;
+      }
+    }
+    &-name {
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: $main-blue;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 15px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 1200px) {
+        font-size: 13px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 10px;
+      }
+    }
+    &-price {
+      color: $gray;
+      letter-spacing: 0.02em;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 400;
+      }
+
+      @media screen and (max-width: 1200px) {
+        font-size: 13px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 10px;
+      }
+
+      &-div {
+        margin-top: 3px;
+        display: flex;
+
+        @media screen and (max-width: 1200px) {
+          margin-top: 5px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-top: 3px;
+        }
+      }
+      &-sale {
+        margin-right: 16px;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 400;
+        }
+
+        @media screen and (max-width: 1200px) {
+          font-size: 13px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 10px;
+        }
+      }
+      &-through {
+        text-decoration: line-through;
+        color: $light-gray;
+      }
+    }
+  }
+}

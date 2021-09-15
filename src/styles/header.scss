@@ -41,13 +41,17 @@
       size: 25px;
       weight: 500;
     }
-    color: $white;
+    color: $dark-blue;
 
     @media screen and (max-width: 768px) {
       color: $main-blue;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 21px;
     }
   }
 
@@ -81,10 +85,18 @@
   }
 
   &__icon {
-    margin-left: 12px;
+    &-btn {
+      margin-left: 8px;
 
-    &:first-child {
-      margin-left: 0;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 18px;
+      width: 18px;
+      margin-top: 4px;
     }
   }
 }

@@ -1,0 +1,27 @@
+@import '../_colors.scss';
+@import '../fontFaces/montserrat.css';
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 150px 0 150px;
+
+  &__bread-crumbs {
+    margin: 100px auto 0 auto;
+    color: $main-blue;
+    font: {
+      family: 'Montserrat';
+      size: 14px;
+      weight: 500;
+    }
+
+    &_active {
+      color: $gray;
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+}

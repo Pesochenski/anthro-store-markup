@@ -1,0 +1,147 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.home {
+  &__start {
+    display: flex;
+    height: 808px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      height: initial;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 484px;
+    background: $dark-blue;
+
+    @media screen and (max-width: 1200px) {
+      width: 322px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 251px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 250px;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 213px;
+    }
+  }
+  &__description {
+    margin: 456px 0 0 150px;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 43px 0 0 25px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin: 22px 0 0 15px;
+    }
+  }
+
+  &__title {
+    letter-spacing: 0.04em;
+    color: $main-gray;
+    font: {
+      family: 'Neue Haas Grotesk Display Pro';
+      size: 40px;
+      weight: 300;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 178px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: initial;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-top: 5px;
+    width: 302px;
+    line-height: 134.9%;
+    color: $main-gray;
+    font: {
+      family: 'Montserrat';
+      weight: 400;
+      size: 15px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 17px;
+      width: 216px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 9px;
+      width: 410px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 12px;
+      width: 272px;
+    }
+  }
+
+  &__main-btn {
+    margin-top: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $main-gray;
+    font: {
+      family: 'Montserrat';
+      size: 15px;
+      weight: 700;
+    }
+    line-height: 21px;
+    border-bottom: 2px solid $main-gray;
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 21px;
+    }
+  }
+
+  &__home-pic {
+    background: url('../../../assets/img/home/homePage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-grow: 1;
+
+    @media screen and (max-width: 768px) {
+      flex-grow: inherit;
+      width: 100%;
+      height: 783px;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 355px;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.home {
+  &__gifts {
+    height: 1158px;
+    width: 100%;
+    padding: 0 150px 0 150px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 20px 0 20px;
+      height: 943px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 0 25px 0 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      height: 1258px;
+    }
+
+    &-title {
+      width: 743px;
+      margin: 143px auto 0 auto;
+      line-height: 141.9%;
+      text-align: center;
+      color: $main-blue;
+      font: {
+        family: 'Montserrat';
+        size: 25px;
+        weight: 400;
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-top: 103px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 727px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 78px;
+        line-height: 141.9%;
+        width: 469px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 60px;
+        width: 290px;
+        font-size: 18px;
+      }
+    }
+    &-btn {
+      margin: 20px auto 0 auto;
+      letter-spacing: 0.03em;
+      line-height: 21px;
+      color: $main-blue;
+      text-transform: uppercase;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 700;
+      }
+      border-bottom: 2px solid $main-blue;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 17px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      height: 328px;
+      display: flex;
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 142px;
+        height: 251px;
+
+        @media screen and (max-width: 1200px) {
+          margin-top: 102px;
+          height: 212px;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-top: 90px;
+          height: initial;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        margin-top: 25px;
+        height: 276px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: initial;
+        flex-direction: column;
+        margin-top: 16px;
+        padding: 0 15px 0 15px;
+      }
+    }
+  }
+
+  &__gift {
+    margin-left: 30px;
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 25px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 16px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    &-descr {
+      margin-top: 29px;
+      margin-left: auto;
+
+      &-1 {
+        margin-right: 34px;
+      }
+      &-2 {
+        margin-right: 26px;
+      }
+      &-3 {
+        margin-right: 57px;
+      }
+      &-4 {
+        margin-right: 48px;
+      }
+    }
+
+    &-title {
+      color: $main-blue;
+      letter-spacing: -0.01em;
+      font: {
+        family: 'Montserrat';
+        size: 25px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+    &-btn {
+      text-transform: uppercase;
+      color: $main-blue;
+      letter-spacing: 0.12em;
+      margin-top: 8px;
+      line-height: 15px;
+      font: {
+        family: 'Montserrat';
+        size: 10px;
+        weight: 500;
+      }
+      border-bottom: 1px solid $main-blue;
+    }
+
+    &-1 {
+      flex-grow: 3;
+      background: url('../../../assets/img/home/Gifts.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-2 {
+      flex-grow: 2;
+      background: url('../../../assets/img/home/Decoration.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-3 {
+      flex-grow: 2;
+      background: url('../../../assets/img/home/Lighting.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-4 {
+      flex-grow: 3;
+      background: url('../../../assets/img/home/Furniture.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-grow: initial;
+      width: 100%;
+      height: 211px;
+      margin: 0;
+      margin-top: 16px;
+    }
+  }
+}
