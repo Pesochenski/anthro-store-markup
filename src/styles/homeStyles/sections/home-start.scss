@@ -19,7 +19,7 @@
     width: 484px;
     background: $dark-blue;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       width: 322px;
     }
 
@@ -39,7 +39,7 @@
   &__description {
     margin: 456px 0 0 150px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       margin-left: 20px;
     }
 
@@ -131,6 +131,7 @@
     background: url('../../../assets/img/home/homePage.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     flex-grow: 1;
 

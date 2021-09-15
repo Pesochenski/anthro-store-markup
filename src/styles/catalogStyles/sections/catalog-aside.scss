@@ -9,6 +9,10 @@
 
     margin-top: 34px;
 
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     &-btns {
       display: flex;
       flex-direction: column;
@@ -19,9 +23,12 @@
       flex-direction: column;
 
       &-accord {
-        text-transform: uppercase;
         width: 236px;
         margin-top: 35px;
+
+        @media screen and (max-width: 1440px) {
+          width: 216px;
+        }
 
         &-header {
           width: 100%;
@@ -33,6 +40,7 @@
 
         &-title {
           color: $main-blue;
+          text-transform: uppercase;
           font: {
             family: 'Montserrat';
             size: 15px;
@@ -52,12 +60,102 @@
           color: $main-blue;
         }
       }
+
+      &-colors {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 0 0 34px;
+      }
+      &-color {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+        cursor: pointer;
+        width: fit-content;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &-exp {
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+
+          &-1 {
+            background-color: #6a6b66;
+          }
+          &-2 {
+            background-color: #605c37;
+          }
+          &-3 {
+            background-color: #c1001d;
+          }
+          &-4 {
+            background-color: #774c1e;
+          }
+          &-5 {
+            background-color: #774c1e;
+          }
+          &-6 {
+            background-color: #eed9d0;
+          }
+          &-7 {
+            background-color: #d3bb44;
+          }
+        }
+
+        &-name {
+          margin-left: 8px;
+          color: $main-blue;
+          font: {
+            family: 'Montserrat';
+            size: 15px;
+            weight: 400;
+          }
+        }
+      }
+
+      &-prices {
+        margin: 19px 0 0 24px;
+      }
+      &-price {
+        display: flex;
+        margin-top: 8px;
+        cursor: pointer;
+        width: fit-content;
+
+        &-title {
+          text-transform: uppercase;
+          color: $gray;
+          font: {
+            family: 'Neue Haas Grotesk Display Pro';
+            size: 13px;
+            weight: 300;
+          }
+
+          &_active {
+            color: $main-blue;
+          }
+        }
+
+        &-result {
+          margin-left: 8px;
+          color: $gray;
+          font: {
+            family: 'Neue Haas Grotesk Display Pro';
+            size: 13px;
+            weight: 300;
+          }
+        }
+      }
     }
 
     &-btn {
       margin-top: 30px;
       color: $main-blue;
-      cursor: pointer;
+      width: fit-content;
+      white-space: nowrap;
       font: {
         family: 'Montserrat';
         size: 20px;
@@ -69,22 +167,21 @@
       }
 
       &_active {
-        margin-top: 7px;
-        border-style: inset;
-        border-width: 2px;
-        width: 122px;
-        color: $main-blue;
+        padding-bottom: 7px;
+        border-bottom: 2px solid $main-blue;
       }
     }
 
     &-menu {
       margin: 30px 0 0 36px;
+      display: flex;
+      flex-direction: column;
     }
 
     &-item {
       margin-top: 19.5px;
       color: $main-blue;
-      cursor: pointer;
+      width: fit-content;
       font: {
         family: 'Montserrat';
         size: 14px;
@@ -96,11 +193,8 @@
       }
 
       &_active {
-        margin-top: 4px;
-        border-style: inset;
-        border-width: 1px;
-        width: 113px;
-        color: $main-blue;
+        padding-bottom: 4px;
+        border-bottom: 1px solid $main-blue;
       }
     }
   }

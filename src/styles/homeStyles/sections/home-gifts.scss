@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       padding: 0 20px 0 20px;
       height: 943px;
     }
@@ -36,7 +36,7 @@
         weight: 400;
       }
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1440px) {
         margin-top: 103px;
       }
 
@@ -86,7 +86,7 @@
         margin-top: 142px;
         height: 251px;
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1440px) {
           margin-top: 102px;
           height: 212px;
         }
@@ -97,7 +97,7 @@
         }
       }
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1440px) {
         margin-top: 25px;
         height: 276px;
       }
@@ -115,7 +115,7 @@
     margin-left: 30px;
     display: flex;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       margin-left: 25px;
     }
 
@@ -179,24 +179,28 @@
     &-1 {
       flex-grow: 3;
       background: url('../../../assets/img/home/Gifts.png');
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     &-2 {
       flex-grow: 2;
       background: url('../../../assets/img/home/Decoration.png');
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     &-3 {
       flex-grow: 2;
       background: url('../../../assets/img/home/Lighting.png');
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     &-4 {
       flex-grow: 3;
       background: url('../../../assets/img/home/Furniture.png');
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }

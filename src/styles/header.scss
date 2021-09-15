@@ -9,12 +9,16 @@
   margin-top: 38px;
   padding: 0 150px 0 150px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1440px) {
     padding: 0 20px 0 20px;
   }
 
   @media screen and (max-width: 1000px) {
     padding: 0 25px 0 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px 0 15px;
   }
 
   &__burger {

@@ -5,6 +5,56 @@
     margin-top: 34px;
     margin-left: 55px;
     width: 100%;
+
+    @media screen and (max-width: 1440px) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 17px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 18px;
+    }
+
+    &-pag {
+      margin: 24px -8px 0 auto;
+      display: flex;
+      align-items: center;
+
+      &-num {
+        color: $main-blue;
+        margin: 0 15px 0 15px;
+        letter-spacing: 0.03em;
+        font: {
+          family: 'Neue Haas Grotesk Display Pro';
+          size: 20px;
+          weight: 300;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin: 0 19px 0 19px;
+          letter-spacing: 0.03em;
+          font-size: 18px;
+        }
+      }
+    }
+    &-arrow {
+      &-left {
+        transform: rotate(180deg);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 43px;
+        height: 43px;
+      }
+    }
   }
 
   &__header {
@@ -13,9 +63,27 @@
     align-items: center;
     width: 100%;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
     &-main {
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+
+      @media screen and (max-width: 480px) {
+        display: flex;
+      }
     }
     &-title {
       color: $main-blue;
@@ -24,6 +92,15 @@
         family: 'Montserrat';
         size: 20px;
         weight: 500;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 480px) {
+        display: block;
+        font-size: 18px;
       }
     }
     &-result {
@@ -35,19 +112,35 @@
         size: 14px;
         weight: 500;
       }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 21px;
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 0;
+        margin-left: 17px;
+      }
     }
 
-    &-filter {
+    &-sort {
       display: flex;
       align-items: center;
-    }
-    &-sort {
-      letter-spacing: 0.01em;
-      color: $gray;
-      font: {
-        family: 'Montserrat';
-        size: 18px;
-        weight: 500;
+
+      &-title {
+        letter-spacing: 0.01em;
+        color: $gray;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 480px) {
+          letter-spacing: 0.03em;
+          font-size: 16px;
+        }
       }
 
       &-item {
@@ -60,11 +153,284 @@
           weight: 500;
         }
         cursor: pointer;
+
+        @media screen and (max-width: 480px) {
+          font-size: 16px;
+          letter-spacing: 0.03em;
+          margin-left: 16px;
+        }
       }
     }
+
     &-arrow {
       margin-left: 8px;
       cursor: pointer;
+    }
+
+    &-filters {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 480px) {
+        flex-direction: row-reverse;
+        margin-top: 23px;
+      }
+    }
+
+    &-filter {
+      display: none;
+      cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
+
+      &-title {
+        color: $main-blue;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 480px) {
+          letter-spacing: 0.03em;
+          font-size: 16px;
+        }
+      }
+
+      &-icon {
+        margin-left: 9px;
+
+        @media screen and (max-width: 480px) {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  &__items {
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      margin-top: -6px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 8px;
+    }
+  }
+
+  &__item {
+    margin-top: 32px;
+    min-width: 263px;
+    width: calc(33% - 15px);
+
+    cursor: pointer;
+
+    @media screen and (max-width: 1440px) {
+      width: calc(33% - 10px);
+      min-width: 221px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: calc(50% - 15px);
+    }
+
+    @media screen and (max-width: 768px) {
+      width: calc(50% - 10px);
+      min-width: 215px;
+      margin-top: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: calc(50% - 7.5px);
+      margin-top: 19px;
+      min-width: 138px;
+    }
+
+    &-pic {
+      height: 362px;
+
+      @media screen and (max-width: 1440px) {
+        height: 331px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 321px;
+      }
+
+      @media screen and (max-width: 480px) {
+        height: 214px;
+      }
+
+      &-1 {
+        background: url('../../../assets/img/catalog/card-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-2 {
+        background: url('../../../assets/img/catalog/card-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-3 {
+        background: url('../../../assets/img/catalog/card-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-4 {
+        background: url('../../../assets/img/catalog/card-4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-5 {
+        background: url('../../../assets/img/catalog/card-5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-6 {
+        background: url('../../../assets/img/catalog/card-6.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-7 {
+        background: url('../../../assets/img/catalog/card-7.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-8 {
+        background: url('../../../assets/img/catalog/card-8.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-9 {
+        background: url('../../../assets/img/catalog/card-9.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-10 {
+        background: url('../../../assets/img/catalog/card-10.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-11 {
+        background: url('../../../assets/img/catalog/card-11.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-12 {
+        background: url('../../../assets/img/catalog/card-12.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-13 {
+        background: url('../../../assets/img/catalog/card-13.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-14 {
+        background: url('../../../assets/img/catalog/card-14.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-15 {
+        background: url('../../../assets/img/catalog/card-15.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-16 {
+        background: url('../../../assets/img/catalog/card-16.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-17 {
+        background: url('../../../assets/img/catalog/card-17.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-18 {
+        background: url('../../../assets/img/catalog/card-18.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &-title {
+      color: $main-blue;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-top: 13px;
+      font: {
+        family: 'Neue Haas Grotesk Display Pro';
+        size: 15px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 1440px) {
+        font-size: 13px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 7px;
+        font-size: 10px;
+      }
+    }
+    &-price {
+      margin-top: 3px;
+      display: flex;
+
+      @media screen and (max-width: 1440px) {
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 3px;
+      }
+
+      &-title {
+        color: $gray;
+        letter-spacing: 0.02em;
+        font: {
+          family: 'Neue Haas Grotesk Display Pro';
+          size: 15px;
+          weight: 300;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 13px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 10px;
+        }
+      }
     }
   }
 }

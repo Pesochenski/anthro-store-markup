@@ -7,6 +7,18 @@
 
   padding: 0 150px 0 150px;
 
+  @media screen and (max-width: 1440px) {
+    padding: 0 25px 0 20px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 25px 0 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px 0 15px;
+  }
+
   &__bread-crumbs {
     margin: 100px auto 0 auto;
     color: $main-blue;
@@ -14,6 +26,20 @@
       family: 'Montserrat';
       size: 14px;
       weight: 500;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 244px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 95px;
+      font-size: 14px;
     }
 
     &_active {
