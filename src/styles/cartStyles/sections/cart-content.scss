@@ -1,0 +1,31 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.cart {
+  &__content {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+
+    @media screen and (max-width: 1440px) {
+      width: 100%;
+      margin-top: 27px;
+      padding: 0 20px 0 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 0 25px 0 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 45px;
+      padding: 0 15px 0 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 30px;
+    }
+  }
+}

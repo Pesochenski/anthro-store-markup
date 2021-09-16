@@ -1,0 +1,226 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.cart {
+  &__result {
+    margin: 23px auto 151px auto;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1440px) {
+      width: 100%;
+      padding: 0 20px 0 20px;
+      margin-top: 27px;
+      margin-bottom: 114px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      padding: 0 15px 0 15px;
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 50px;
+      margin-bottom: 70px;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    &-shipping {
+      &-info {
+        display: flex;
+        align-items: center;
+        width: 311px;
+        height: 49px;
+        border: 1px solid $gray;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+          height: 40px;
+        }
+      }
+      &-title {
+        color: $gray;
+        margin-left: 17px;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-left: 16px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+        }
+      }
+      &-dest {
+        letter-spacing: 0.02em;
+        color: $main-blue;
+        margin-left: 14px;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+          letter-spacing: 0;
+          margin-left: 20px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-left: 22px;
+          font-size: 13px;
+        }
+      }
+      &-btn {
+        margin-left: 40px;
+
+        @media screen and (max-width: 768px) {
+          margin-left: auto;
+          margin-right: 12px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-right: 10px;
+        }
+      }
+
+      &-additional {
+        margin-top: 7px;
+        color: $light-gray;
+        font: {
+          family: 'Montserrat';
+          size: 12px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 13px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 11px;
+        }
+      }
+    }
+
+    &-money {
+      display: flex;
+
+      &-wrapper {
+        margin-left: 93px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 27px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 21px;
+      }
+
+      &-title {
+        margin-top: 15px;
+        text-transform: uppercase;
+        color: $main-blue;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 400;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+        }
+      }
+      &-count {
+        margin-top: 15px;
+        color: $main-blue;
+        letter-spacing: 0.02em;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 500;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    &-btn {
+      margin-top: 26px;
+      margin-left: auto;
+      width: 175px;
+      height: 38px;
+      text-transform: uppercase;
+      color: $main-gray;
+      background-color: $main-blue;
+      letter-spacing: 0.03em;
+      font: {
+        family: 'Montserrat';
+        size: 10px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 1440px) {
+        margin-top: 26px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 21px;
+        width: 100%;
+        height: 46px;
+        font: {
+          size: 14px;
+          weight: 400;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 23px;
+        height: 35px;
+        font-size: 12px;
+      }
+    }
+  }
+}

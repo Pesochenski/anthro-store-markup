@@ -4,7 +4,154 @@
   @@include('../components/_header.html')
 
   <section class="cart">
-    <h1>Cart</h1>
+    <section class="cart__header">
+      <div class="cart__header-main">
+        <h1 class="cart__header-title">You have 3 items in your shopping cart</h1>
+        <button class="cart__header-btn">continue shopping</button>
+      </div>
+
+      <div class="cart__header-nav">
+        <hr class="cart__header-line"/>
+
+        <div class="cart__header-items">
+          <p class="cart__header-item">item</p>
+          <p class="cart__header-item">description</p>
+          <p class="cart__header-item cart__header-item-quantity">quantity</p>
+          <p class="cart__header-item">item total</p>
+        </div>
+
+        <hr class="cart__header-line"/>
+      </div>
+    </section>
+
+    <section class="cart__content">
+      <div class="cart__item">
+        <div class="cart__item-pic cart__item-pic-1"></div>
+        <div class="cart__item-content">
+          <div class="cart__item-content-main">
+            <p class="cart__item-content-title">Sherpa Atticus Armchair</p>
+            <div class="cart__item-color">
+              <p class="cart__item-color-title">Color:</p>
+              <div class="cart__item-color-exp"></div>
+            </div>
+          </div>
+
+          <div class="cart__item-count">
+            <button class="cart__item-count-dec">
+              <img src="" alt="dec">
+            </button>
+            <p class="cart__item-count-num">1</p>
+            <button class="cart__item-count-inc">
+              <img src="" alt="inc">
+            </button>
+          </div>
+
+          <div class="cart__item-price">
+            <p class="cart__item-price-sale">USD 4300.00</p>
+            <p class="cart__item-price-total">USD 1835.00</p>
+            <p class="cart__item-price-calc">(1.00 x USD 1 835.00)</p>
+          </div>
+        </div>
+
+        <button class="cart__item-delete">
+          <img src="" alt="del">
+        </button>
+      </div>
+
+      <div class="cart__item">
+        <div class="cart__item-pic cart__item-pic-2"></div>
+        <div class="cart__item-content">
+          <div class="cart__item-content-main">
+            <p class="cart__item-content-title">Swirled Drum Coffee Table</p>
+            <div class="cart__item-color">
+              <p class="cart__item-color-title">Color:</p>
+              <div class="cart__item-color-exp"></div>
+            </div>
+          </div>
+
+          <div class="cart__item-count">
+            <button class="cart__item-count-dec">
+              <img src="" alt="dec">
+            </button>
+            <p class="cart__item-count-num">1</p>
+            <button class="cart__item-count-inc">
+              <img src="" alt="inc">
+            </button>
+          </div>
+
+          <div class="cart__item-price">
+            <p class="cart__item-price-total">USD 3294.00</p>
+            <p class="cart__item-price-calc">(1.00 x USD 3294.00)</p>
+          </div>
+        </div>
+
+        <button class="cart__item-delete">
+          <img src="" alt="del">
+        </button>
+      </div>
+
+      <div class="cart__item">
+        <div class="cart__item-pic cart__item-pic-3"></div>
+        <div class="cart__item-content">
+          <div class="cart__item-content-main">
+            <p class="cart__item-content-title">Katina Sleeper Chair</p>
+            <div class="cart__item-color">
+              <p class="cart__item-color-title">Color:</p>
+              <div class="cart__item-color-exp"></div>
+            </div>
+          </div>
+
+          <div class="cart__item-count">
+            <button class="cart__item-count-dec">
+              <img src="" alt="dec">
+            </button>
+            <p class="cart__item-count-num">1</p>
+            <button class="cart__item-count-inc">
+              <img src="" alt="inc">
+            </button>
+          </div>
+
+          <div class="cart__item-price">
+            <p class="cart__item-price-total">USD 3200.00</p>
+            <p class="cart__item-price-calc">(1.00 x USD 3200.00)</p>
+          </div>
+        </div>
+
+        <button class="cart__item-delete">
+          <img src="" alt="del">
+        </button>
+      </div>
+    </section>
+
+    <section class="cart__result">
+      <div class="cart__result-wrapper">
+        <div class="cart__result-shipping">
+          <div class="cart__result-shipping-info">
+            <p class="cart__result-shipping-title">Shipping to:</p>
+            <p class="cart__result-shipping-dest">United States</p>
+            <button class="cart__result-shipping-btn">
+              <img src="../assets/svg/cart/cartArrow.svg" alt="open" />
+            </button>
+          </div>
+
+          <p class="cart__result-shipping-additional">Planned shipping within 1 business day</p>
+        </div>
+
+        <div class="cart__result-money">
+          <div class="cart__result-money-wrapper">
+            <p class="cart__result-money-title">shipping</p>
+            <p class="cart__result-money-title">total price</p>
+          </div>
+
+          <div class="cart__result-money-wrapper">
+            <p class="cart__result-money-count">USD 30.00</p>
+            <p class="cart__result-money-count">USD 10 164.00</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="cart__result-btn">checkout</button>
+    </section>
   </section>
 
   @@include('../components/_footer.html')

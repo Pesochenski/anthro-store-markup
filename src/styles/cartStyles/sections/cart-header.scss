@@ -1,0 +1,137 @@
+@import '../../_colors.scss';
+@import '../../fontFaces/grotesk.css';
+@import '../../fontFaces/montserrat.css';
+
+.cart {
+  &__header {
+    margin: 116px auto 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 95px;
+    }
+
+    &-main {
+      width: 1140px;
+      margin: 0 auto 0 auto;
+
+      @media screen and (max-width: 1440px) {
+        width: 100%;
+        padding: 0 30px 0 30px;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0 15px 0 15px;
+      }
+    }
+
+    &-title {
+      letter-spacing: -0.01em;
+      color: $main-blue;
+      font: {
+        family: 'Montserrat';
+        size: 30px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+
+    &-btn {
+      color: $main-blue;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      width: fit-content;
+      font: {
+        family: 'Montserrat';
+        size: 10px;
+        weight: 500;
+      }
+      margin-top: 10px;
+      border-bottom: 1px solid $main-blue;
+    }
+
+    &-nav {
+      margin-top: 44px;
+      width: 100%;
+      min-height: 57px;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 480px) {
+        margin-top: 28px;
+        min-height: 35px;
+      }
+    }
+
+    &-line {
+      border: 1px solid $extra-light-gray;
+      width: 100%;
+    }
+
+    &-items {
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      width: 1140px;
+      padding-right: 171px;
+
+      @media screen and (max-width: 1440px) {
+        width: 100%;
+        padding: 0 120px 0 20px;
+      }
+
+      @media screen and (max-widtrh: 1000px) {
+        padding: 0 109px 0 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0 15px 0 15px;
+      }
+    }
+
+    &-item {
+      color: $main-blue;
+      text-transform: uppercase;
+      font: {
+        family: 'Montserrat';
+        size: 15px;
+        weight: 500;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+
+      &-quantity {
+        margin-left: 284px;
+
+        @media screen and (max-width: 1440px) {
+          margin-left: 221px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          margin-left: 138px;
+        }
+      }
+    }
+  }
+}
