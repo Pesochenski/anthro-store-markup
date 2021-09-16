@@ -4,9 +4,64 @@
   @@include('../components/_header.html')
 
   <section class="blog">
-    <h1>Blog</h1>
+    <section class="blog__select">
+      <hr class="blog__select-line"/>
+
+      <div class="blog__select-titles">
+        <p class="blog__select-item blog__select-item_active">all</p>
+        <p class="blog__select-item">inspiration</p>
+        <p class="blog__select-item">decorating</p>
+        <p class="blog__select-item">diy</p>
+        <p class="blog__select-item">inside look</p>
+      </div>
+
+      <hr class="blog__select-line"/>
+    </section>
+
+    <section class="blog__content">
+      <div class="blog__item">
+        <div class="blog__item-pic blog__item-pic-1" alt="img"></div>
+        <div class="blog__item-content">
+          <p class="blog__item-type">decorating</p>
+          <p class="blog__item-title">What's your Furniture Style?</p>
+          <p class="blog__item-text">We can all tell the difference between enduring traditional and sleek contemporary furniture styles. But are you really clear about terms like mid-century modern and urban farmhouse?</p>
+          <button class="blog__item-btn">read</button>
+        </div>
+      </div>
+
+      <div class="blog__item blog__item_reverse">
+        <div class="blog__item-pic blog__item-pic-2" alt="img"></div>
+        <div class="blog__item-content blog__item-content_reverse">
+          <p class="blog__item-type">inspiration</p>
+          <p class="blog__item-title">Which Sofa Style is Best for You?</p>
+          <p class="blog__item-text">There is no shortage of sofa styles, and which design you select for your home will reflect your personality.</p>
+          <button class="blog__item-btn">read</button>
+        </div>
+      </div>
+
+      <div class="blog__item">
+        <div class="blog__item-pic blog__item-pic-3" alt="img"></div>
+        <div class="blog__item-content">
+          <p class="blog__item-type">inspirating</p>
+          <p class="blog__item-title">2021 Home Furniture Trends</p>
+          <p class="blog__item-text">When searching the Internet for home design trends, there are hundreds that come up from dozens of different publications.</p>
+          <button class="blog__item-btn">read</button>
+        </div>
+      </div>
+
+      <div class="blog__item blog__item_reverse">
+        <div class="blog__item-pic blog__item-pic-4" alt="img"></div>
+        <div class="blog__item-content blog__item-content_reverse">
+          <p class="blog__item-type">decorating</p>
+          <p class="blog__item-title">Ways to Decorate Your Home with the Color Red</p>
+          <p class="blog__item-text">The color red is a warm color that can be a powerful accent color. Because it can be overwhelming, it should always be used in moderation.</p>
+          <button class="blog__item-btn">read</button>
+        </div>
+      </div>
+    </section>
   </section>
 
+  @@include('../components/_mailing.html')
   @@include('../components/_footer.html')
 </body>
 
