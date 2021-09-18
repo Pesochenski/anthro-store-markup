@@ -82,20 +82,19 @@
     &-items {
       margin: auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 1140px;
-      padding-right: 171px;
 
       @media screen and (max-width: 1440px) {
-        width: 100%;
-        padding: 0 120px 0 20px;
+        width: 960px;
       }
 
-      @media screen and (max-widtrh: 1000px) {
-        padding: 0 109px 0 25px;
+      @media screen and (max-width: 1000px) {
+        width: 718px;
       }
 
       @media screen and (max-width: 768px) {
+        width: 100%;
         padding: 0 15px 0 15px;
       }
     }
@@ -121,15 +120,43 @@
         font-size: 12px;
       }
 
-      &-quantity {
-        margin-left: 284px;
+      &:first-child {
+        flex-basis: 291px;
 
         @media screen and (max-width: 1440px) {
-          margin-left: 221px;
+          flex-basis: 248px;
         }
 
         @media screen and (max-width: 1000px) {
-          margin-left: 138px;
+          flex-basis: 121px;
+        }
+
+        @media screen and (max-width: 768px) {
+          flex-basis: auto;
+        }
+      }
+
+      &-quantity {
+        flex-basis: 195px;
+
+        @media screen and (max-width: 1440px) {
+          flex-basis: 193px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          flex-basis: 177px;
+        }
+      }
+
+      &-description {
+        flex-basis: 391px;
+
+        @media screen and (max-width: 1440px) {
+          flex-basis: 328px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          flex-basis: 245px;
         }
       }
     }

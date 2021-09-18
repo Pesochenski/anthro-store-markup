@@ -4,14 +4,13 @@
 
 .cart {
   &__content {
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: column;
-    width: 1140px;
+    width: 100%;
 
     @media screen and (max-width: 1440px) {
       width: 100%;
-      margin-top: 27px;
       padding: 0 20px 0 20px;
     }
 
@@ -20,12 +19,374 @@
     }
 
     @media screen and (max-width: 768px) {
-      margin-top: 45px;
+      margin-top: 5px;
       padding: 0 15px 0 15px;
     }
 
     @media screen and (max-width: 480px) {
-      margin-top: 30px;
+      margin-top: 0;
+    }
+
+    &-line {
+      width: 100%;
+      border: 1px solid $extra-light-gray;
+    }
+  }
+
+  &__item {
+    margin: 20px auto 20px auto;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1440px) {
+      width: 960px;
+      margin: 27px auto 27px auto;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 718px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      align-items: flex-start;
+      margin: 40px 0 40px 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin: 30px 0 30px 0;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-between;
+      margin: 0 120px 0 131px;
+
+      @media screen and (max-width: 1440px) {
+        margin: 0 86px 0 107px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        margin: 0 69px 0 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 24px 65px 0 20px;
+        // flex-direction: column;
+        display: block;
+        justify-content: center;
+        flex-grow: 0;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin: 20px 0 0 22px;
+      }
+
+      &-main {
+        flex-basis: 381px;
+
+        @media screen and (max-width: 1440px) {
+          flex-basis: 328px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          flex-basis: 245px;
+        }
+
+        @media screen and (max-width: 768px) {
+          flex-basis: auto;
+        }
+      }
+
+      &-title {
+        color: $main-blue;
+        font: {
+          family: 'Montserrat';
+          size: 20px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 17px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    &-color {
+      margin-top: 9px;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 1440px) {
+        margin-top: 11px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 9px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 5px;
+      }
+
+      &-title {
+        color: $main-blue;
+        font: {
+          family: 'Montserrat';
+          size: 15px;
+          weight: 400;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 13px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 15px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+      &-exp {
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        margin-left: 5px;
+
+        @media screen and (max-width: 1440px) {
+          margin-left: 11px;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-left: 10px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-left: 5px;
+          height: 14px;
+          width: 14px;
+        }
+
+        &-1 {
+          background-color: #605c37;
+        }
+        &-2 {
+          background-color: #7e4933;
+        }
+        &-3 {
+          background-color: #dfc9bc;
+        }
+      }
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 107px;
+      height: 40px;
+      border: 1px solid $gray;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 24px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 18px;
+        height: 30px;
+        width: 81px;
+      }
+
+      &-num {
+        color: $main-blue;
+        font: {
+          family: 'Montserrat';
+          size: 18px;
+          weight: 400;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+      &-inc {
+        width: 34px;
+        height: 100%;
+        border-left: 1px solid $gray;
+
+        @media screen and (max-width: 480px) {
+          width: 25px;
+        }
+      }
+      &-dec {
+        width: 34px;
+        height: 100%;
+        border-right: 1px solid $gray;
+
+        @media screen and (max-width: 480px) {
+          width: 25px;
+        }
+      }
+    }
+
+    &-pic {
+      width: 163px;
+      height: 152px;
+
+      @media screen and (max-width: 1440px) {
+        height: 138px;
+        width: 138px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        height: 107px;
+        width: 107px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 250px;
+        width: 215px;
+        min-width: 215px;
+      }
+
+      @media screen and (max-width: 480px) {
+        min-width: 138px;
+        height: 203px;
+        width: 138px;
+      }
+
+      &-1 {
+        background: url('../../../assets/img/cart/cart-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-2 {
+        background: url('../../../assets/img/cart/cart-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &-3 {
+        background: url('../../../assets/img/cart/cart-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      // flex-basis: 213px;
+      margin-left: 88px;
+
+      @media screen and (max-width: 1440px) {
+        margin-left: 86px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        margin-left: 70px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 26px;
+        width: fit-content;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-top: 10px;
+      }
+
+      &-sale {
+        color: $gray;
+        margin: 0 auto 3px auto;
+        text-decoration: line-through;
+        font: {
+          family: 'Neue Haas Grotesk Display Pro';
+          size: 14px;
+          weight: 300;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 13px;
+        }
+
+        @media screen and (max-width: 480px) {
+          margin-bottom: 1px;
+          font-size: 11px;
+        }
+      }
+
+      &-total {
+        margin: 0 auto 0 auto;
+        color: $main-blue;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        font: {
+          family: 'Neue Haas Grotesk Display Pro';
+          size: 17px;
+          weight: 500;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 15px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+        }
+
+        &-sale {
+          color: $red;
+        }
+      }
+      &-calc {
+        color: $gray;
+        margin: 3px auto 0 auto;
+        white-space: nowrap;
+        font: {
+          family: 'Neue Haas Grotesk Display Pro';
+          size: 14px;
+          weight: 300;
+        }
+
+        @media screen and (max-width: 1440px) {
+          font-size: 9px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 11px;
+          margin-top: 1px;
+        }
+      }
+    }
+
+    &-delete {
+      margin-left: auto;
     }
   }
 }
